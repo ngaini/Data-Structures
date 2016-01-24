@@ -104,14 +104,41 @@ public class LinkedList
 	
 	
 	//delete at the start and return the element deleted
-	public int deleteAtStart()
+	public void deleteAtStart()
 	{
+		if(first ==null)
+		{
+			System.out.println(" No Nodes to delete");
+			return;
+		}
 		Node temp = first;
 		first=first.next;
-		return temp.data;
+		System.out.println(" Deleted :" +temp.data);
 	}
 	
 	//delete at the end 
+	public void deleteAtEnd()
+	{
+		//create node for traversal
+		Node current= first;
+		Node previous= null;
+		//check is lsit is not empty
+		if(first==null)
+		{
+			System.out.println(" No Nodes to delete");
+			return;
+		}
+		//check if only one node is present then delete that node and assign first to null
+		
+		//traverse till end and delete node
+		while(current.next!=null)
+		{
+			previous =current;
+			current = current.next;
+		}
+		previous.next =null;
+		System.out.println(" Delete node :"+current.data);
+	}
 	
 	//delete after a specified location
 	

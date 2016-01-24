@@ -29,6 +29,18 @@ public class LinkedListApp {
 		llOblect.insertAfterKey(50, 55);
 		
 		llOblect.display();
+		llOblect.deleteAtEnd();
+		llOblect.display();
+		llOblect.deleteAtEnd();
+		llOblect.display();
+		llOblect.deleteAtEnd();
+		llOblect.display();
+		llOblect.deleteAtEnd();
+		llOblect.display();
+		llOblect.deleteAtEnd();
+		llOblect.display();
+		llOblect.deleteAtEnd();
+		llOblect.display();
 		
 	}
 
