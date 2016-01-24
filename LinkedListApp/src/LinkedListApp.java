@@ -41,6 +41,19 @@ public class LinkedListApp {
 		llOblect.display();
 		llOblect.deleteAtEnd();
 		llOblect.display();
+		llOblect.deleteAtKey(50);
+		llOblect.insertAtEnd(40);
+		llOblect.deleteAtKey(50);
+		llOblect.insertAtStart(10);
+		llOblect.insertAtStart(20);
+		llOblect.insertAtStart(30);
+		llOblect.insertAtEnd(50);
+		
+		llOblect.display();
+		llOblect.insertAtStart(25);
+		llOblect.display();
+		llOblect.deleteAtKey(50);
+		llOblect.display();
 		
 	}
 

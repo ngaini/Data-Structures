@@ -147,6 +147,34 @@ public class LinkedList
 	}
 	
 	//delete after a specified location
+	public void deleteAtKey(int key)
+	{
+		Node current = first;
+		Node previous = null;
+		//check if the list is empty
+		if (first == null)
+		{
+			System.out.println(" List is Empty, cannot perform delete");
+			return;
+			
+		}
+		//Traverse till we find the key
+		while(current.data!=key)
+		{
+			//if reached the end of the list
+			if(current.next==null)
+			{
+				System.out.println("key not found");
+				return;
+			}
+			previous = current;
+			current= current.next;
+		}
+		previous.next  = current.next;
+		current.next =null;
+		
+		
+	}
 	
 	//display linked list
 	public void display()
