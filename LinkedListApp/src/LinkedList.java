@@ -129,7 +129,13 @@ public class LinkedList
 			return;
 		}
 		//check if only one node is present then delete that node and assign first to null
-		
+		if(first.next==null)
+		{
+			//Delete First node
+			first =null; 
+			System.out.println("Deleted node "+current.data);
+			return;
+		}
 		//traverse till end and delete node
 		while(current.next!=null)
 		{
