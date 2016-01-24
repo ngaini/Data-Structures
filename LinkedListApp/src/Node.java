@@ -1,4 +1,8 @@
-
+/**
+ * Class for node
+ * @author Nathan
+ *
+ */
 public class Node 
 {
 	int data;

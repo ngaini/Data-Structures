@@ -1,4 +1,8 @@
-
+/**
+ * Class for Linked List
+ * @author Nathan
+ *
+ */
 public class LinkedList 
 {	
 	Node first;
@@ -154,7 +158,7 @@ public class LinkedList
 		//check if the list is empty
 		if (first == null)
 		{
-			System.out.println(" List is Empty, cannot perform delete");
+			System.out.println(" List is Empty, cannot perform delete for "+key);
 			return;
 			
 		}
@@ -164,7 +168,7 @@ public class LinkedList
 			//if reached the end of the list
 			if(current.next==null)
 			{
-				System.out.println("key not found");
+				System.out.println(key+" key not found");
 				return;
 			}
 			previous = current;
