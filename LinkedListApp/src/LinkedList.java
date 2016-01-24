@@ -42,7 +42,7 @@ public class LinkedList
 			
 			first=newLink;
 			current=newLink;
-			System.out.println(" "+first.data+"::"+newLink.data);
+//			System.out.println(" "+first.data+"::"+newLink.data);
 		}
 		
 //		System.out.println("first :"+first.data +" "+newLink.data+" "+current.data);
@@ -54,18 +54,18 @@ public class LinkedList
 			{
 				
 				
-					System.out.println(" current "+current.data);
-					System.out.println(current.next);
+//					System.out.println(" current "+current.data);
+//					System.out.println(current.next);
 					current = current.next;
 				
 			}
 			//once we reach the end of the list add new node
 			current.next=newLink;
-			System.out.println("hello "+current.next.data);
+			System.out.println("hello "+current.next.data+" ::"+newLink.next);
 		}
 			
-			
 		
+		System.out.println(newLink.next);
 		
 		
 	}
@@ -77,23 +77,29 @@ public class LinkedList
 		Node newLink = new Node(data);
 		//create a current 			
 		Node current = first;
-		// find the node
+		//if no nodes present
+		System.out.println("current "+current.data+" first"+first.data+newLink.next);
+		if(first==null)
+		{
+			current=newLink;
+			first=newLink;
+			return;
+		}
+		//else find the node
 		while(current.data!=key)
 		{
-			//key not found
+			// check if we reached the end of the list
+			//if yes then node is not found
 			if(current.next==null)
 			{
-				System.out.println("key not found");
+				System.out.println("node not found");
+				return;
 			}
-			else
-			{
-				current = current.next;
-				
-			}
+			current = current.next;
+			
 		}
-		//insert the node
-		newLink.next = current.next;
-		current.next = newLink;
+		newLink.next=current.next;
+		current.next=newLink;
 	}
 	
 	

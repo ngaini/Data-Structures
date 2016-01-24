@@ -25,6 +25,10 @@ public class LinkedListApp {
 		llOblect.insertAtStart(30);
 		llOblect.insertAtEnd(50);
 		llOblect.display();
+//		System.out.println("hello");
+		llOblect.insertAfterKey(50, 55);
+		
+		llOblect.display();
 		
 	}
 
