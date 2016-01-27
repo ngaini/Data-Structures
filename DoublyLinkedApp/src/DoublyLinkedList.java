@@ -87,12 +87,48 @@ public class DoublyLinkedList {
 	
 	
 	//delete at first
+	public void deleteAtStart()
+	{
+		//check if list is empty
+		if(first == null)
+		{
+			System.out.println(" empty");
+			return;
+		}
+		Node temp = first;
+		first = first.next;
+		temp.next= null;
+		first.previous = null;
+	}
 	
 	//delete at last
-	
+	public void deleteAtEnd()
+	{
+		//check if list is empty
+		if(first == null)
+		{
+			System.out.println("empty");
+			return;
+		}
+		Node temp = last;
+		last = last.previous;
+		last.next = null;
+		temp.previous = null;
+		
+	}
 	//delete a key
 	
 	//display list method
+	public void display()
+	{
+		Node current = first;
+		while (current!=last) 
+		{
+			System.out.println("D Lsit Elements are \n ");
+			current.displayNode();
+			current = current.next;
+		}
+	}
 	
 	
 }
