@@ -128,6 +128,12 @@ public class DoublyLinkedList {
 			System.out.println("empty");
 			return;
 		}
+		if(first.next==null)
+		{
+			first=null;
+			last=null;
+			return;
+		}
 		Node temp = last;
 		last = last.previous;
 		last.next = null;

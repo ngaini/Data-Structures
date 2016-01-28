@@ -42,6 +42,30 @@ public class DoublyLinkedApp {
 		dll.display();
 		dll.insertAtStart(5);
 		dll.display();
+		dll.insertAtStart(51);
+		dll.display();
+		dll.deleteAtStart();
+		dll.display();
+		dll.deleteAtEnd();
+		dll.display();
+		dll.deleteAtEnd();
+		dll.display();
+		dll.deleteAtEnd();
+		dll.display();
+		dll.deleteAtEnd();
+		dll.display();
+		dll.insertAfterKey(10, 15);
+		dll.insertAtStart(10);
+		dll.display();
+		dll.insertAfterKey(10, 95);
+		dll.display();
+
+		dll.insertAtEnd(15);
+		dll.display();
+		dll.insertAtStart(5);
+		dll.display();
+		dll.insertAtStart(51);
+		dll.display();
 		
 
 	}
