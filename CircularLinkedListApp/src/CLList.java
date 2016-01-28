@@ -20,7 +20,7 @@ public class CLList {
 		
 		//node for traversal
 		Node current = first;
-		System.out.println(current+"::"+current.next+" ||"+first+"::"+first.next);
+//		System.out.println(current+"::"+current.next+" ||"+first+"::"+first.next);
 		if(first == null)
 		{
 			first = newLink;
@@ -44,6 +44,7 @@ public class CLList {
 		if(first == null)
 		{
 			first = newLink;
+			System.out.println(first+"::nl"+newLink+" :: next "+first.next);
 			return;
 		}
 		// traverse untill the last node
@@ -53,9 +54,11 @@ public class CLList {
 			
 		}
 		// inset oprations
+		System.out.println(current.next+" ***"+newLink);
 		newLink.next = current.next;
 		current.next = newLink;
 		first =newLink;
+		System.out.println(first+"!!");
 		
 	}
 	
@@ -77,6 +80,7 @@ public class CLList {
 		if(first.next == first)
 		{
 			first = null;
+			return;
 		}
 		
 		//traverse
@@ -103,7 +107,14 @@ public class CLList {
 			System.out.println("List empty");
 			return;
 		}
-		
+		//check if list has only one node
+				if(first.next == first)
+				{
+					System.out.println("\n"+first.data+" deleted");
+					first = null;
+					System.out.println(first+" first");
+					return;
+				}
 		// traverse till end
 		while(current.next!=first)
 		{
@@ -112,29 +123,38 @@ public class CLList {
 		//delete first node
 		current.next = first.next;
 		first = first.next;
+		System.out.println("\n\n ##"+temp.data+" deleted");
 		temp.next = null;
+
 	}
 	
 	//display List
 	public void display()
-	{
-		Node current = first ;
+	{	
 		
+		Node current = first ;
+//		System.out.println("*1*");
 		if(first == null)
 		{
+			System.out.println("*2*");
 			System.out.println("List empty , nothing to display");
 			return;
 		}
+		System.out.println("\n *** Circulat Linked List \n");
 		if(first.next == first)
 		{
+//			System.out.println("*3*");
 			current.displayNode();
 			return;
 		}
 		
-		while(current.next!=first)
+		do
 		{
+//			System.out.println("*4*");
 			current.displayNode();
-		}
-		
+//			System.out.println(current.data);
+			current = current.next;
+		}while(current!=first);
+//		System.out.println("out");
 	}
 }
