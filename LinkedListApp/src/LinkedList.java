@@ -1,5 +1,5 @@
 /**
- * Class for Linked List
+ * Class for Linked Listgit 	
  * @author Nathan
  *
  */

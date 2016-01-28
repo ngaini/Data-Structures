@@ -1,4 +1,8 @@
-
+/**
+ * Class for the application
+ * @author Nathan
+ *
+ */
 public class LinkedListApp {
 
 	public static void main(String[] args) 
