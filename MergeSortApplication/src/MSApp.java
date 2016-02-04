@@ -14,6 +14,8 @@ public class MSApp {
 			MergeSort(A, temp, left, mid);
 			MergeSort(A, temp, mid+1, right);
 			// now to merge the two arrays
+			Merge(A, temp, left, mid, right);
+//			display(A);
 		}
 	}
 	
@@ -54,8 +56,16 @@ public class MSApp {
 		for(i=0; i<=size; i++)
 		{
 			A[right]= temp[right];
-			right= right-1;
+			right-=1;
 		}
+	}
+	
+	public void display(int[] A)
+	{
+		System.out.println("Array elements are");
+		for(int i=0; i<7; i++)
+			System.out.print(" "+A[i]);
+		System.out.println("\n");
 	}
 	
 	public static void main(String[] args) {
@@ -64,9 +74,10 @@ public class MSApp {
 		int[] A= new int[] {10,15,9,1,8,50,2};
 		int left=0;
 		int right=6;
-		int[] temp = new int[];
+		int[] temp = new int[7];
+		m1.display(A);
 		m1.MergeSort(A, temp, left, right);
-		
+//		m1.display(A);
 	}
 
 }
