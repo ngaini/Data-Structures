@@ -3,81 +3,77 @@ import java.time.chrono.MinguoEra;
 
 public class MSApp {
 	
-	// merge method
-	
-	public void MergeSort(int[] A, int[] temp, int left, int right )
+	public void sort(int[] a)
 	{
-		int mid;
-		if(right>left)
-		{
-			mid=(right+left)/2;
-			MergeSort(A, temp, left, mid);
-			MergeSort(A, temp, mid+1, right);
-			// now to merge the two arrays
-			Merge(A, temp, left, mid, right);
-//			display(A);
+		// if only one element is present then it is already sorted
+		if(a.length<=1)
+			return;
+		
+		/*
+		 *  else split the array into two parts,first half into left and
+		 *  second half into right
+		 */
+		int[] left = new int[a.length/2];
+		int[] right= new int[a.length-left.length];
+		for(int i=0; i<left.length; i++)
+		{	
+			left[i]= a[i];
 		}
+		
+		for(int j=0; j<right.length;j++)
+		{
+			right[j]=a[left.length+j];
+		}
+		sort(left);
+		sort(right);
+		//merging the two sorted arrays
+		merge(left, right, a);
+		
+		
 	}
 	
-	public void Merge(int[] A, int[] temp, int left,int mid, int right )
+	public void merge(int[] left, int[] right, int a[] )
 	{
-		int i, left_end, size, temp_pos;
-		left_end = mid -1;
-		temp_pos = left;
-		size = right - left+1;
-		while((left<=left_end)&&(mid<=right))
+		/* i for keeping track of elements of left
+		 * j for keeping track of elements of right
+		 * k for keeping track of elements of a
+		 */
+		
+		int i =0;
+		int j=0;
+		int k=0;
+		
+		while(i<left.length  && j<right.length)
 		{
-			if(A[left]<= A[mid])
+			
+			if(left[i]<right[j])
 			{
-				temp[temp_pos]= A[left];
-				temp_pos+=1;
-				left+=1;
+				a[k]=left[i];
+				i++;
+				k++;
 			}
 			else
 			{
-				temp[temp_pos]=A[mid];
-				temp_pos+=1;
-				mid+=1;
-				
+				a[k]=right[j];
+				j++;
+				k++;
 			}
 		}
-		while(left<=left_end)
+		
+		// copy remaining elements of left
+		while(i<left.length)
 		{
-			temp[temp_pos]= A[left];
-			temp_pos+=1;
-			left+=1;
+			a[k]=left[i];
+			i++;
+			k++;
 		}
-		while(mid<=right)
+		// copy remaining elements of right
+		while(j<right.length)
 		{
-			temp[temp_pos]=A[mid];
-			temp_pos+=1;
-			mid+=1;
-		}
-		for(i=0; i<=size; i++)
-		{
-			A[right]= temp[right];
-			right-=1;
+			a[k]=right[j];
+			j++;
+			k++;
 		}
 	}
 	
-	public void display(int[] A)
-	{
-		System.out.println("Array elements are");
-		for(int i=0; i<7; i++)
-			System.out.print(" "+A[i]);
-		System.out.println("\n");
-	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		MSApp m1= new MSApp();
-		int[] A= new int[] {10,15,9,1,8,50,2};
-		int left=0;
-		int right=6;
-		int[] temp = new int[7];
-		m1.display(A);
-		m1.MergeSort(A, temp, left, right);
-//		m1.display(A);
-	}
-
 }
