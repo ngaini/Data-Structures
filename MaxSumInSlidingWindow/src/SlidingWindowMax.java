@@ -91,13 +91,31 @@ public class SlidingWindowMax {
             return sum;
         }
 
+        int queueMax()
+        {
+            int max =0;
+            Node curr = first;
+            while(curr!=null)
+            {
+                if(curr.data>=max)
+                {
+                    max = curr.data;
+                }
+                curr = curr.next;
+
+            }
+            return max;
+
+        }
+
     }
 
 
 
     int slidingWindowVal(Queue q1)
     {
-       return q1.queueTotalVal();
+//       return q1.queueTotalVal();
+       return q1.queueMax();
     }
 
     // implement queue enqueue and dequeue methods
@@ -125,7 +143,7 @@ public class SlidingWindowMax {
     {
         SlidingWindowMax slidingWindow = new SlidingWindowMax();
         SlidingWindowMax.Queue queue =  slidingWindow.new Queue();
-        int[] intArr = {12, 10 , 5, 1 ,6 ,21,15,13};
+        int[] intArr = {1,3,-1,-3,5,3,6,7};
         int max;
 
         // construct the queue
