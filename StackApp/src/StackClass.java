@@ -1,8 +1,12 @@
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
  * Created by Nathan on 4/29/2016.
+ *
+ * problem numbering based follows the problems from Stack Chapter in Karumanchi
  */
 public class StackClass {
 
@@ -234,7 +238,48 @@ public class StackClass {
         return st2.pop();
     }
 
+    /**
+     * karumanchi : problem 15
+     * implementing stacks using two queues
+     *
+     */
+    void pushFunction(Queue<Integer> q1, Queue<Integer> q2, int data)
+    {
+        if(q1.isEmpty())
+            q2.add(data);
+        else
+            q1.add(data);
 
+    }
+
+    int popFunction(Queue<Integer> q1, Queue<Integer> q2)
+    {
+        if(q1.isEmpty() && q2.isEmpty()) return -1;
+        int size=-1;
+        if(q2.isEmpty())
+        {
+            size =q1.size();
+            int i=0;
+            while(i<(size-1))
+            {
+                q2.add(q1.poll());
+                i++;
+            }
+            return q1.poll();
+        }
+        else
+        {
+            int i=0;
+            size = q2.size();
+            while(i<(size-1))
+            {
+                q1.add(q2.poll());
+                i++;
+            }
+            return q2.poll();
+        }
+
+    }
     public static void main(String args[])
     {
         StackClass sc = new StackClass();
@@ -284,6 +329,29 @@ public class StackClass {
         System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
         System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
         System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+
+
+        // test for problem 13 : implementing stacks using two queues
+        Queue<Integer> q1 = new LinkedList<Integer>();
+        Queue<Integer> q2 = new LinkedList<Integer>();
+        q1.add(10);
+        q1.add(15);
+        q1.add(19);
+        q1.add(84);
+        q1.add(6);
+        sc.pushFunction(q1,q2,45);
+        System.out.println(Arrays.toString(q1.toArray()));
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+
+
+
     }
 
 }
