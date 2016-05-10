@@ -26,33 +26,16 @@
       <file leaf-file-name="StackClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StackClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="336" column="19" selection-start-line="336" selection-start-column="19" selection-end-line="336" selection-end-column="19" />
+            <state relative-caret-position="-958">
+              <caret line="310" column="47" selection-start-line="310" selection-start-column="47" selection-end-line="310" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#339#348#0" expanded="true" />
-                <element signature="e#1418#1427#0" expanded="true" />
-                <element signature="e#1477#1488#0" expanded="true" />
-                <element signature="e#5186#5187#0" expanded="true" />
-                <element signature="e#5215#5216#0" expanded="true" />
-                <element signature="e#6920#6931#0" expanded="true" />
-                <element signature="e#7267#7276#0" expanded="true" />
-                <element signature="e#7735#7744#0" expanded="true" />
-                <element signature="e#7789#7798#0" expanded="true" />
-                <element signature="e#8565#8574#0" expanded="true" />
-                <element signature="e#8620#8629#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#3888#0" expanded="false" />
+                <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+                <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+                <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+                <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+                <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+                <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -61,7 +44,7 @@
       <file leaf-file-name="StackNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StackNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="289">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
@@ -96,9 +79,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1378" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -125,42 +109,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StackApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StackApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StackApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StackApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StackApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -679,16 +632,20 @@
       <option name="presentableId" value="Default" />
       <updated>1461962061456</updated>
       <workItem from="1461962066512" duration="13549000" />
-      <workItem from="1462224310931" duration="7918000" />
+      <workItem from="1462224310931" duration="9573000" />
+      <workItem from="1462315270099" duration="1266000" />
+      <workItem from="1462491384651" duration="2027000" />
+      <workItem from="1462840456742" duration="4395000" />
+      <workItem from="1462855032601" duration="1075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21467000" />
+    <option name="totallyTimeSpent" value="31885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -698,17 +655,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5133438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47009966" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46972176" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -730,7 +687,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/StackClass.java</url>
+          <line>300</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -745,17 +710,36 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#348#0" expanded="true" />
-            <element signature="e#1418#1427#0" expanded="true" />
-            <element signature="e#1477#1488#0" expanded="true" />
-            <element signature="e#5186#5187#0" expanded="true" />
-            <element signature="e#5215#5216#0" expanded="true" />
-            <element signature="e#6920#6931#0" expanded="true" />
-            <element signature="e#7267#7276#0" expanded="true" />
-            <element signature="e#7735#7744#0" expanded="true" />
-            <element signature="e#7789#7798#0" expanded="true" />
-            <element signature="e#8565#8574#0" expanded="true" />
-            <element signature="e#8620#8629#0" expanded="true" />
+            <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -764,9 +748,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3888#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -780,99 +866,31 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="310" column="0" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45964#0" expanded="false" />
-            <element signature="e#5329#5330#0" expanded="false" />
-            <element signature="e#5369#5370#0" expanded="false" />
-            <element signature="e#5553#5554#0" expanded="false" />
-            <element signature="e#5577#5578#0" expanded="false" />
-            <element signature="e#7001#7002#0" expanded="false" />
-            <element signature="e#7075#7076#0" expanded="false" />
-            <element signature="e#11363#11364#0" expanded="false" />
-            <element signature="e#11404#11405#0" expanded="false" />
-            <element signature="e#11886#11887#0" expanded="false" />
-            <element signature="e#11926#11927#0" expanded="false" />
-            <element signature="e#12458#12459#0" expanded="false" />
-            <element signature="e#12517#12518#0" expanded="false" />
-            <element signature="e#13325#13326#0" expanded="false" />
-            <element signature="e#13366#13367#0" expanded="false" />
-            <element signature="e#13954#13955#0" expanded="false" />
-            <element signature="e#13990#13991#0" expanded="false" />
-            <element signature="e#15838#15839#0" expanded="false" />
-            <element signature="e#15891#15892#0" expanded="false" />
-            <element signature="e#26001#26002#0" expanded="false" />
-            <element signature="e#26064#26065#0" expanded="false" />
-            <element signature="e#27816#27817#0" expanded="false" />
-            <element signature="e#27861#27862#0" expanded="false" />
-            <element signature="e#30039#30040#0" expanded="false" />
-            <element signature="e#30078#30079#0" expanded="false" />
-            <element signature="e#30630#30631#0" expanded="false" />
-            <element signature="e#30677#30678#0" expanded="false" />
-            <element signature="e#31863#31864#0" expanded="false" />
-            <element signature="e#31898#31899#0" expanded="false" />
-            <element signature="e#32396#32397#0" expanded="false" />
-            <element signature="e#32439#32440#0" expanded="false" />
-            <element signature="e#34360#34361#0" expanded="false" />
-            <element signature="e#34401#34402#0" expanded="false" />
-            <element signature="e#35457#35458#0" expanded="false" />
-            <element signature="e#35498#35499#0" expanded="false" />
-            <element signature="e#37728#37729#0" expanded="false" />
-            <element signature="e#37766#37767#0" expanded="false" />
-            <element signature="e#37876#37877#0" expanded="false" />
-            <element signature="e#37915#37916#0" expanded="false" />
-            <element signature="e#38092#38093#0" expanded="false" />
-            <element signature="e#38131#38132#0" expanded="false" />
-            <element signature="e#42823#42824#0" expanded="false" />
-            <element signature="e#42860#42861#0" expanded="false" />
-            <element signature="e#43173#43174#0" expanded="false" />
-            <element signature="e#43205#43206#0" expanded="false" />
-            <element signature="e#44857#44858#0" expanded="false" />
-            <element signature="e#44899#44900#0" expanded="false" />
-            <element signature="e#44933#44934#0" expanded="false" />
-            <element signature="e#44970#44971#0" expanded="false" />
-            <element signature="e#45008#45009#0" expanded="false" />
-            <element signature="e#45049#45050#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="98">
+          <caret line="472" column="0" selection-start-line="472" selection-start-column="0" selection-end-line="472" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#3888#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StackNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="98">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StackClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="336" column="19" selection-start-line="336" selection-start-column="19" selection-end-line="336" selection-end-column="19" />
+        <state relative-caret-position="-958">
+          <caret line="310" column="47" selection-start-line="310" selection-start-column="47" selection-end-line="310" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#348#0" expanded="true" />
-            <element signature="e#1418#1427#0" expanded="true" />
-            <element signature="e#1477#1488#0" expanded="true" />
-            <element signature="e#5186#5187#0" expanded="true" />
-            <element signature="e#5215#5216#0" expanded="true" />
-            <element signature="e#6920#6931#0" expanded="true" />
-            <element signature="e#7267#7276#0" expanded="true" />
-            <element signature="e#7735#7744#0" expanded="true" />
-            <element signature="e#7789#7798#0" expanded="true" />
-            <element signature="e#8565#8574#0" expanded="true" />
-            <element signature="e#8620#8629#0" expanded="true" />
+            <marker date="1462856155156" expanded="false" signature="8286:8297" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="8651:8660" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9139:9148" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="9195:9204" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10005:10014" placeholder="&lt;~&gt;" />
+            <marker date="1462856155156" expanded="false" signature="10062:10071" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

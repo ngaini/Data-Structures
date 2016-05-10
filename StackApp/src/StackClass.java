@@ -280,75 +280,137 @@ public class StackClass {
         }
 
     }
+
+    /**
+     * karumanchi: problem 14
+     * implement two stacks in an array
+     */
+
+
+    /**
+     * karumanchi: problem 23
+     * Maximum Rectangle area in Histogram
+     */
+    int findMaxRectangularAreaInHistogram(int[] histogram)
+    {
+        Stack<Integer> s1 = new Stack<Integer>();
+        int i=0;
+        int top;
+        int area;
+        int maxArea= -1;
+        while(i<histogram.length)
+        {
+            //check if the element at top of the stack is less than the current element
+            if(s1.empty() || histogram[s1.peek()]<=histogram[i] )
+            {
+                //if yes then push onto the stack
+                s1.push(i++);
+            }
+            else
+            {
+                //else keep poping the elements
+                top = s1.pop();
+                if(s1.empty())
+                    area = histogram[top]*i;
+                else
+                    area = histogram[top]*(i-s1.peek()-1);
+                if(area>maxArea)
+                    maxArea = area;
+            }
+
+        }
+        while(!s1.empty())
+        {
+            top = s1.pop();
+            if(s1.empty())
+                area = histogram[top]*i;
+            else
+                area = histogram[top]*(i-s1.peek()-1);
+            if(area> maxArea)
+                maxArea = area;
+        }
+
+        return maxArea;
+    }
+
     public static void main(String args[])
     {
         StackClass sc = new StackClass();
 
 //        String postfix = "123*+5-";
 //        int val = sc.postfixEvaluation(postfix);
-        String infix = "1+2*(6-3)";
-        int val = sc.evalueateinfix(infix);
-        if (val == -1)
-            System.out.println(" Expression is Empty ");
-        else
-            System.out.println("Postfix Eval is "+val);
+//        String infix = "1+2*(6-3)";
+//        int val = sc.evalueateinfix(infix);
+//        if (val == -1)
+//            System.out.println(" Expression is Empty ");
+//        else
+//            System.out.println("Postfix Eval is "+val);
+//
+//        // test for minStack
+//        int[] intArr = {2,9,5,6,4,8,3,1};
+//        Stack<StackNode> st = new Stack<StackNode>();
+//        sc.constructStack(intArr, st);
+//        st.pop();
+//        if(sc.findMinimum(st)<0)
+//            System.out.println(" Stack Empty");
+//        else
+//            System.out.println("Min Stack Value is "+sc.findMinimum(st));
+//
+//        //test for problem 11: reversing Stack using only one stack
+//        Stack<Integer> st1 = new Stack<Integer>();
+//        for(int i=1;i<6; i++)
+//            st1.push(i);
+//
+//        System.out.println(" Top of the stack is "+st1.peek());
+//        System.out.println(Arrays.toString(st1.toArray()));
+//        sc.reverseStack(st1);
+//        System.out.println("After reversal top of the stack is "+st1.peek());
+//        System.out.println(Arrays.toString(st1.toArray()));
+//        // test for problem 12 : implementing stacks using queues
+//        Stack<Integer> stack1 = new Stack<Integer>();
+//        Stack<Integer> stack2 = new Stack<Integer>();
+//        for(int i=1;i<6; i++)
+//        {
+//            sc.enqueue(stack1,i);
+//            System.out.println(i+" has been enqueued ");
+//        }
+//
+//        System.out.println(Arrays.toString(stack1.toArray()));
+//        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+//        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+//        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+//        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+//        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+//        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+//
+//
+//        // test for problem 13 : implementing stacks using two queues
+//        Queue<Integer> q1 = new LinkedList<Integer>();
+//        Queue<Integer> q2 = new LinkedList<Integer>();
+//        q1.add(10);
+//        q1.add(15);
+//        q1.add(19);
+//        q1.add(84);
+//        q1.add(6);
+//        sc.pushFunction(q1,q2,45);
+//        System.out.println(Arrays.toString(q1.toArray()));
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+//        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
 
-        // test for minStack
-        int[] intArr = {2,9,5,6,4,8,3,1};
-        Stack<StackNode> st = new Stack<StackNode>();
-        sc.constructStack(intArr, st);
-        st.pop();
-        if(sc.findMinimum(st)<0)
-            System.out.println(" Stack Empty");
-        else
-            System.out.println("Min Stack Value is "+sc.findMinimum(st));
 
-        //test for problem 11: reversing Stack using only one stack
-        Stack<Integer> st1 = new Stack<Integer>();
-        for(int i=1;i<6; i++)
-            st1.push(i);
-
-        System.out.println(" Top of the stack is "+st1.peek());
-        System.out.println(Arrays.toString(st1.toArray()));
-        sc.reverseStack(st1);
-        System.out.println("After reversal top of the stack is "+st1.peek());
-        System.out.println(Arrays.toString(st1.toArray()));
-        // test for problem 12 : implementing stacks using queues
-        Stack<Integer> stack1 = new Stack<Integer>();
-        Stack<Integer> stack2 = new Stack<Integer>();
-        for(int i=1;i<6; i++)
-        {
-            sc.enqueue(stack1,i);
-            System.out.println(i+" has been enqueued ");
-        }
-
-        System.out.println(Arrays.toString(stack1.toArray()));
-        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
-        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
-        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
-        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
-        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
-        System.out.println(sc.dequeue(stack1,stack2)+" has been dequed");
+        //test for  problem 14 : implement two stack in one array
 
 
-        // test for problem 13 : implementing stacks using two queues
-        Queue<Integer> q1 = new LinkedList<Integer>();
-        Queue<Integer> q2 = new LinkedList<Integer>();
-        q1.add(10);
-        q1.add(15);
-        q1.add(19);
-        q1.add(84);
-        q1.add(6);
-        sc.pushFunction(q1,q2,45);
-        System.out.println(Arrays.toString(q1.toArray()));
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
-        System.out.println(sc.popFunction(q1,q2)+" has been popped from the stack");
+        //test for problem 23 : Maximum reactangle area in a histogram
+        int[] arr = {6,2,5,4,5,1,6};
+        System.out.println("The maximum retangular area of this histogram is "+sc.findMaxRectangularAreaInHistogram(arr));
+
 
 
 
