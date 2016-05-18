@@ -333,6 +333,34 @@ public class StackClass {
         return maxArea;
     }
 
+
+    /**
+     * Karumanchi problem 27: Removing adjacent duplicates
+     * @param str
+     * @return
+     */
+    String removeAdjacentDuplicates(String str)
+      {
+          int i =0;
+          String res="";
+          Stack<Character> stk = new Stack<Character>();
+
+          while(i<str.length())
+          {
+              if(stk.empty() || str.charAt(i)!= stk.peek())
+              {
+                stk.push(str.charAt(i));
+              }
+              else stk.pop();
+              i++;
+          }
+          int size = stk.size();
+          for(int j =0; j<size;j++)
+              res+=stk.pop();
+          return res;
+      }
+
+
     public static void main(String args[])
     {
         StackClass sc = new StackClass();
@@ -408,8 +436,11 @@ public class StackClass {
 
 
         //test for problem 23 : Maximum reactangle area in a histogram
-        int[] arr = {6,2,5,4,5,1,6};
-        System.out.println("The maximum retangular area of this histogram is "+sc.findMaxRectangularAreaInHistogram(arr));
+//        int[] arr = {6,2,5,4,5,1,6};
+//        System.out.println("The maximum retangular area of this histogram is "+sc.findMaxRectangularAreaInHistogram(arr));
+
+        String testString ="careermonk";
+        System.out.println("The resulting removing adjacent duplicates is :"+sc.removeAdjacentDuplicates(testString));
 
 
 
