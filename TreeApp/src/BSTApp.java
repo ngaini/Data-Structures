@@ -51,6 +51,41 @@ public class BSTApp {
 //    }
 
 
+    boolean searchingWithRecursion(TreeNode root, int data)
+    {
+        if(root != null)
+        {
+            if(root.data == data) return true;
+            boolean temp = searchingWithRecursion(root.left, data);
+
+            // if element is found and it is true then return true else recur down the left subtree.
+            if(temp)
+               return temp;
+            else
+                return searchingWithRecursion(root.right,data);
+
+
+        }
+        return false;
+    }
+
+
+    boolean searchingWithoutResursion(TreeNode root, int data)
+    {
+        if(root == null) return false;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty())
+        {
+            TreeNode temp = q.remove();
+            if(temp.data == data) return true;
+            if(temp.left != null) q.add(temp.left);
+            if(temp.right != null) q.add(temp.right);
+        }
+
+        return false;
+
+    }
     /**
      * method for finding the max value in a Binary tree
      * @param root
@@ -120,11 +155,19 @@ public class BSTApp {
         bst1.root.right.left.right.right.right = new TreeNode(27);
 
         //test for max value in binary tree
-        System.out.println("Max value of the tree is "+ bst1.maxValue(bst1.root));
+//        System.out.println("Max value of the tree is "+ bst1.maxValue(bst1.root));
 
         //test for top view of a tree
-        bst1.topView(bst1.root);
+//        bst1.topView(bst1.root);
 
+//        if(bst1.searchingWithRecursion(bst1.root, 45 ))
+//            System.out.println("Element found");
+//        else
+//            System.out.println("Element not found");
 
+        if(bst1.searchingWithoutResursion(bst1.root, 7 ))
+            System.out.println("Element found");
+        else
+            System.out.println("Element not found");
     }
 }
