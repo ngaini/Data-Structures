@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -141,6 +142,56 @@ public class BSTApp {
 
     }
 
+
+
+//    int[] path = new int[10];
+    boolean hasPath(TreeNode root, int sum,int index, ArrayList<Integer> path)
+    {
+
+        //incase the root is null
+        if(root == null )
+        {
+//            sum=sum+ path[index-1];
+            index--;
+
+            return false;
+        }
+//        path[index]=root.data;
+        path.add(root.data);
+        int subSum = sum - root.data;
+        if(root.left==null && root.right == null && subSum==0)
+        {
+            print(path, index);
+            return true;
+        }
+        if(root.left==null && root.right == null && subSum>0)
+        {
+            path.remove(path.size()-1);
+            return false;
+        }
+
+
+            return (hasPath(root.left, subSum, index+1,path)|| hasPath(root.right, subSum,index+1,path));
+
+
+
+
+
+
+
+
+    }
+
+//    void print(int[] arrayName, int index)
+    void print(ArrayList<Integer> arrayName, int index)
+    {
+        for(int i=0;i<index+1;i++) {
+            System.out.print(" " + arrayName.get(i));
+
+
+//            System.out.print(" "+arrayName[i]);
+        }
+    }
     public static void main(String args[])
     {
 
@@ -148,6 +199,8 @@ public class BSTApp {
         bst1.root = new TreeNode(15);
         bst1.root.right = new TreeNode(30);
         bst1.root.left = new TreeNode(7);
+        bst1.root.left.right = new TreeNode(9);
+        bst1.root.left.left = new TreeNode(3);
         bst1.root.right.left = new TreeNode(20);
         bst1.root.right.right = new TreeNode(45);
         bst1.root.right.left.right = new TreeNode(25);
@@ -165,9 +218,15 @@ public class BSTApp {
 //        else
 //            System.out.println("Element not found");
 
-        if(bst1.searchingWithoutResursion(bst1.root, 7 ))
-            System.out.println("Element found");
+//        if(bst1.searchingWithoutResursion(bst1.root, 7 ))
+//            System.out.println("Element found");
+//        else
+//            System.out.println("Element not found");
+        ArrayList<Integer> path= new ArrayList<>();
+        if(bst1.hasPath(bst1.root,143,0,path))
+            System.out.println("There exist a path");
         else
-            System.out.println("Element not found");
+            System.out.println("No path to sum");
+
     }
 }
