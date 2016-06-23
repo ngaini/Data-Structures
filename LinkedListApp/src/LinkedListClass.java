@@ -3,14 +3,14 @@
  * @author Nathan
  *
  */
-public class LinkedList 
+public class LinkedListClass
 {	
 	Node first;
 	
 	/**
-	 * constructor for LinkedList
+	 * constructor for LinkedListClass
 	 */
-	public LinkedList() 
+	public LinkedListClass()
 	{
 		first=null;
 	}
@@ -193,4 +193,121 @@ public class LinkedList
 		System.out.println("\n");
 		
 	}
+
+	public void display(Node head)
+	{
+		Node current = head;
+		System.out.println("\n\t ***LINKED LIST NODES***\n\n From first to last\n");
+		while(current!=null)
+		{
+			current.displayNode();
+			current=current.next;
+		}
+		System.out.println("\n");
+
+	}
+
+
+	/**
+	 * Unorded partition : my own technique
+	 * From CCI : Problem 2.4
+	 * @param head
+	 * @param key
+     */
+	void unOrderedPartition(Node head, int key)
+	{
+		Node current = head;
+		Node previous = null;
+
+		while(current !=null)
+		{
+			if(current.data < key && current != head)
+			{
+				Node temp = current;
+				current = current.next;
+				previous.next = current;
+
+				temp.next =first;
+				first = temp;
+
+			}
+			else
+			{
+				previous = current;
+				current = current.next;
+			}
+
+		}
+
+		display();
+
+	}
+
+
+	/**
+	 * From CCI : Problem 2.4
+	 * Ordered partition : Book method
+	 * @param head
+	 * @param key
+     * @return
+     */
+	Node orderedPartition(Node head, int key)
+	{
+		Node beforeHead = null;
+		Node beforeTail = null;
+		Node afterHead = null;
+		Node afterTail = null;
+
+		Node current = head;
+		while(current != null)
+		{
+			Node temp = current;
+			current = current.next;
+			temp.next = null;
+
+			if(temp.data< key)
+			{
+				if(beforeHead == null)
+				{
+					beforeHead = temp;
+					beforeTail = beforeHead;
+				}
+				else
+				{
+					beforeTail.next = temp;
+					beforeTail= temp;
+				}
+
+			}
+			else
+			{
+				if(afterHead == null)
+				{
+					afterHead = temp;
+					afterTail = afterHead;
+				}
+				else
+				{
+					afterTail.next = temp;
+					afterTail = temp;
+				}
+
+
+			}
+
+
+
+
+		}
+		if(beforeHead == null)
+			return afterHead;
+
+		beforeTail.next = afterHead;
+		return beforeHead;
+
+
+	}
+
+
+
 }

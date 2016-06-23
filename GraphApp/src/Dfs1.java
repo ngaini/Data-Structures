@@ -8,10 +8,10 @@ import java.util.LinkedList;
 public class Dfs1 {
 
     int noOfVertices;
-    LinkedList<Integer>[] adj;
-
-
-
+//    LinkedList<Integer>[] adj;
+//
+//
+//
 //    Dfs1(int v)
 //    {
 //        noOfVertices = v;
@@ -22,13 +22,13 @@ public class Dfs1 {
 //
 //
 //    }
-
-
+//
+//
 //    void addEdge(int v, int w)
 //    {
 //        adj[v].add(w);
 //    }
-
+//
 //    void DFS(int startVertex)
 //    {
 //        boolean[] visited = new boolean[noOfVertices];
