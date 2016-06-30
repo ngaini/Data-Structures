@@ -65,11 +65,11 @@ public class LinkedListClass
 			}
 			//once we reach the end of the list add new node
 			current.next=newLink;
-			System.out.println("hello "+current.next.data+" ::"+newLink.next);
+//			System.out.println("hello "+current.next.data+" ::"+newLink.next);
 		}
 			
 		
-		System.out.println(newLink.next);
+//		System.out.println(newLink.next);
 		
 		
 	}
@@ -209,8 +209,8 @@ public class LinkedListClass
 
 
 	/**
-	 * Unorded partition : my own technique
 	 * From CCI : Problem 2.4
+	 * Unorded partition : my own technique
 	 * @param head
 	 * @param key
      */
@@ -306,6 +306,41 @@ public class LinkedListClass
 		return beforeHead;
 
 
+	}
+
+	/**
+	 * CCI Problem 2.5 : Book Method
+	 * Adding two numbers represented by linked list
+	 * @param head1
+	 * @param head2
+	 * @param carry
+     * @return
+     */
+	Node sumList(Node head1 , Node head2, int carry)
+	{
+		if(head1 == null && head2 == null && carry == 0)
+		{
+			return null;
+		}
+
+		Node result = null;
+		int value = carry;
+
+		if(head1 != null)
+			value += head1.data;
+
+		if(head2 != null)
+			value += head2.data;
+
+		result = new Node(value%10);
+
+		if( head1 != null || head2!= null)
+		{
+			Node more = sumList(head1==null? null : head1.next, head2==null? null : head2.next, value>=10? 1: 0);
+			result.next = more;
+		}
+
+		return result;
 	}
 
 

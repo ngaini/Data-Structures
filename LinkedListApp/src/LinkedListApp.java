@@ -8,7 +8,8 @@ public class LinkedListApp {
 	public static void main(String[] args) 
 	{
 		LinkedListClass llOblect = new LinkedListClass();
-		
+		LinkedListClass l2 = new LinkedListClass();
+
 //		
 //		
 //		
@@ -62,17 +63,32 @@ public class LinkedListApp {
 		/**
 		 * test for CCI :2.4
 		 */
-		llOblect.insertAtEnd(3);
-		llOblect.insertAtEnd(5);
-		llOblect.insertAtEnd(8);
-		llOblect.insertAtEnd(5);
-		llOblect.insertAtEnd(10);
-		llOblect.insertAtEnd(2);
-		llOblect.insertAtEnd(1);
-		llOblect.display();
-//		llOblect.unOrderedPartition(llOblect.first,5);
-		llOblect.display(llOblect.orderedPartition(llOblect.first, 5));
+//		llOblect.insertAtEnd(3);
+//		llOblect.insertAtEnd(5);
+//		llOblect.insertAtEnd(8);
+//		llOblect.insertAtEnd(5);
+//		llOblect.insertAtEnd(10);
+//		llOblect.insertAtEnd(2);
+//		llOblect.insertAtEnd(1);
 //		llOblect.display();
+////		llOblect.unOrderedPartition(llOblect.first,5);
+//		llOblect.display(llOblect.orderedPartition(llOblect.first, 5));
+//		llOblect.display();
+
+		/**
+		 *  test for CCI 2.5
+		 */
+
+		llOblect.insertAtEnd(7);
+		llOblect.insertAtEnd(1);
+		llOblect.insertAtEnd(6);
+		l2.insertAtEnd(0);
+		l2.insertAtEnd(9);
+		l2.insertAtEnd(1);
+		llOblect.display(llOblect.sumList(llOblect.first, l2.first, 0));
+
+
+
 	}
 
 }
