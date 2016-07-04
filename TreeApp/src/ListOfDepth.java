@@ -25,7 +25,6 @@ public class ListOfDepth {
 
         q.add(root);
 
-
         while(!q.isEmpty())
         {
             int count = q.size();
@@ -46,15 +45,11 @@ public class ListOfDepth {
 
         }
         return depthList;
-
-
-
-
-
     }
 
     void printDepthList(HashMap<Integer, LinkedList<Integer>> list)
     {
+        if(list.size()==0) System.out.println(" Tree is empty");
         for(int i =0; i<list.size(); i++)
         {
             System.out.print(" level "+i+" :");
