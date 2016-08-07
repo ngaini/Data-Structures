@@ -85,6 +85,9 @@ public class LinkedListApp {
 		l2.insertAtEnd(0);
 		l2.insertAtEnd(9);
 		l2.insertAtEnd(1);
+		l2.display();
+		llOblect.display();
+//		l2.reverseLinkedList(l2.first, null, null);
 		llOblect.display(llOblect.sumList(llOblect.first, l2.first, 0));
 
 

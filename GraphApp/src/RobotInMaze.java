@@ -102,7 +102,7 @@ public class RobotInMaze {
             System.out.println();
         }
 
-        System.out.println(maze.length+" & "+maze[0].length);
+//        System.out.println(maze.length+" & "+maze[0].length);
 
 //        AssortedMethods.printMatrix(maze);
 

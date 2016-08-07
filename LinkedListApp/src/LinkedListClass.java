@@ -6,6 +6,7 @@
 public class LinkedListClass
 {	
 	Node first;
+	static Node head;
 	
 	/**
 	 * constructor for LinkedListClass
@@ -342,6 +343,9 @@ public class LinkedListClass
 
 		return result;
 	}
+
+
+
 
 
 
