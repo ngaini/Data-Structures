@@ -58,8 +58,10 @@ public class StringCompress {
 
     public static void main(String args[])
     {
-        StringCompress s = new StringCompress();
-        System.out.println(s.compress("aaaaaaaaab"));
+//        StringCompress s = new StringCompress();
+//        System.out.println(s.compress("aaaaaaaaab"));
+        int len = args.length;
+        System.out.println(len);
 
     }
 

@@ -317,7 +317,7 @@ public class LinkedListClass
 	 * @param carry
      * @return
      */
-	Node sumList(Node head1 , Node head2, int carry)
+	0Node sumList(Node head1 , Node head2, int carry)
 	{
 		if(head1 == null && head2 == null && carry == 0)
 		{
