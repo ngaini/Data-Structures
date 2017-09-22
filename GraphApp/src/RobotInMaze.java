@@ -55,6 +55,20 @@ public class RobotInMaze {
      * @param maze
      * @return
      */
+	
+	class Point{
+		 int x, y;
+		 
+		 Point(){
+			 this.x = -1;
+			 this.y = -1;
+		 }
+		 
+		 Point(int x, int y){
+			 this.x = x ;
+			 this.y = y;
+		 }
+	}
     ArrayList<String> findPath(boolean[][] maze)
     {
         ArrayList<String> path = new ArrayList<String>();
@@ -107,6 +121,7 @@ public class RobotInMaze {
 //        AssortedMethods.printMatrix(maze);
 
 //        ArrayList<String> path = getPath(maze);
+        
         ArrayList<String> path = rim.findPath(maze);
         if (path != null) {
             System.out.println(path.toString());

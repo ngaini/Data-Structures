@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 
+import javax.sound.midi.Soundbank;
+
 /**
  * Created by Nathan on 6/3/2016.
  */
@@ -74,13 +76,19 @@ public class Dfs1 {
     }
 
 
-    void DFS(int v)
+    void DFS()
     {
 //        boolean[] visited = new boolean[noOfVertices];
 //        for(int i = 0; i<noOfVertices; i++)
 //            visited[i]= false;
         HashSet<Integer> visited = new HashSet<>();
-        DFSUtil(v , visited);
+        for(int vertex =0; vertex<neighbours.size(); vertex++)
+        {
+            System.out.println(vertex);
+            if(!visited.contains(vertex))
+                    DFSUtil(vertex , visited);
+
+        }
 
     }
 
@@ -117,8 +125,9 @@ public class Dfs1 {
         System.out.print("Following is Depth First Traversal "+
                 "(starting from vertex 2)");
 
-        g.DFS(2);
+        g.DFS();
 
+    	
 
     }
 }
